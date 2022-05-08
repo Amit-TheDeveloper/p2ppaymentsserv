@@ -18,9 +18,9 @@ public class PaymentService {
         // TODO validate paymentRequest
 
         RiskScore fromPhoneNoRisk = verifyRisk(paymentRequest.getFromPhoneNo());
-        RiskScore toPhoneNoRisk = verifyRisk(paymentRequest.getToPhoneNo());
 
-        if(risk) {
+
+        if(false) {
             throw new RuntimeException("Risky Transaction, not proceeding");
         }
 

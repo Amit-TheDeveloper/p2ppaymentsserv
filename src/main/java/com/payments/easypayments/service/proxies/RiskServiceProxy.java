@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.websocket.server.PathParam;
 
-@FeignClient(name = "riskService", url = "localhost:8000")
+@FeignClient(name = "payments-risk-service", url = "localhost:9090")
 public interface RiskServiceProxy {
 
     @GetMapping("/riskScore/{phoneNos}")
